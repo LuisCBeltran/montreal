@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: #f4f4f4;
+    
+}
+
+/* GLOBAL */
+
+.container {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #f4f4f4;
+    border-bottom: #b30000 solid 3px;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0 10px 0;
+}
+
+header nav {
+    float: right;
+    padding-top: 40px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-weight: bold; */
+    color: black;
+}
+
+header a:hover {
+    color: #b30000;
+}
+/* SHOWCASE */
+
+.showcase {
+    background-color: #f4f4f4;
+    background-image: url(../images/montreal-showcase.jpg);
+    background-position: top;
+    padding: 60px 0 60px 0;
+    border-bottom: #b30000 solid 3px;
+    margin-bottom: 40px;
+}
+
+.showcase h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 5em;
+    font-style: italic;
+}
+
+.showcase h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    padding-left: 50px; 
+}
+
+/* PHRASE */
+
+.phrase {
+    width: 60%;
+    border-top: #131313 solid 2px;
+    border-bottom: #131313 solid 2px;
+    margin: auto;
+}
+
+
+.phrase h3 {
+    font-weight: normal;
+    font-style: italic;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
