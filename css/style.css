@@ -57,6 +57,10 @@ header a:hover {
 
 /* SHOWCASE */
 
+#showcase {
+    flex-direction: column;
+}
+
 .showcase {
     background-color: #f4f4f4;
     background-image: url(../images/montreal-showcase.jpg);
@@ -84,11 +88,15 @@ header a:hover {
 
 .phrase {
     width: 60%;
+    border-radius: 10px;
     border-top: #131313 solid 2px;
     border-bottom: #131313 solid 2px;
     margin: auto;
 }
 
+#phrase {
+    max-width: 90%;
+}
 
 .phrase h3 {
     font-weight: normal;
