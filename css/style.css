@@ -16,6 +16,14 @@ h2 {
     font-size: 2em;
 }
 
+header .navbar {
+    display: none;
+}
+
+header .side-nav {
+    display: none;
+}
+
 /* GLOBAL */
 
 .container {
@@ -255,6 +263,10 @@ footer a:visited {
         padding-left: 0;
     }
 
+    .reasons {
+        width: 75%;
+    }
+
     .reasons #reasons h3 {
         font-size: 1em;
     }
@@ -273,5 +285,65 @@ footer a:visited {
 
     h5 {
         font-size: 0.7em;
+    }
+}
+
+@media (max-width: 425px) {
+
+    header .navbar {
+        display: block;
+        margin-bottom: -35px;
+    }
+
+    header .side-nav {
+        display: block;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        opacity: 0.9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    .side-nav a {
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ccc;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .side-nav a:hover {
+        color: #fff;
+    }
+
+    .side-nav .btn-close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo img {
+        padding: 10px 0 10px 0
+    }
+
+    .showcase h1 {
+        font-size: 2.5em;
+    }
+
+    .showcase h2 {
+        font-size: 2em;
+        padding-left: 0;
     }
 }
