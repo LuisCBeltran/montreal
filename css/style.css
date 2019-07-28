@@ -297,6 +297,7 @@ footer a:visited {
 
     header .side-nav {
         display: block;
+        width: 0;
         height: 100%;
         position: fixed;
         z-index: 1;
