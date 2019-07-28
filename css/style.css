@@ -10,6 +10,12 @@ body {
     
 }
 
+h2 {
+    text-align: center;
+    color: #b30000;
+    font-size: 2em;
+}
+
 /* GLOBAL */
 
 .container {
@@ -22,7 +28,7 @@ body {
 /* HEADER */
 
 .header {
-    background-color: #f4f4f4;
+    background-color: #e9e9e9;
     border-bottom: #b30000 solid 3px;
 }
 
@@ -59,13 +65,14 @@ header a:hover {
 
 #showcase {
     flex-direction: column;
+    padding-left: 20px;
 }
 
 .showcase {
     background-color: #f4f4f4;
     background-image: url(../images/montreal-showcase.jpg);
     background-position: top;
-    padding: 60px 0 60px 0;
+    padding: 60px 0px 60px 0;
     border-bottom: #b30000 solid 3px;
     margin-bottom: 40px;
 }
@@ -84,6 +91,7 @@ header a:hover {
     font-size: 3em;
     padding-left: 50px; 
     text-shadow: 5px 5px 8px #131313;
+    text-align: left;
 }
 
 /* PHRASE */
@@ -99,9 +107,6 @@ header a:hover {
 }
 
 .reasons #reasons h2 {
-    text-align: center;
-    color: #b30000;
-    font-size: 2.2em;
     padding-bottom: 40px;
 }
 
@@ -164,7 +169,7 @@ header a:hover {
 /* LANGUAGES */
 
 .languages {
-    background: #b30000;
+    background: #e9e9e9;
 }
 
 #languages {
@@ -174,15 +179,12 @@ header a:hover {
 }
 
 .languages h2 {
-    color: #f4f4f4;
-    text-align: center;
-    font-size: 2.2em;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
 .languagebox h3 {
-    color: #f4f4f4;
+    color: #131313;
     text-align: center;
     font-size: 1.8em;
     padding: 5px;
@@ -190,7 +192,7 @@ header a:hover {
 
 .languagebox {
     width: 200px;
-    padding: 0px 20px 40px 20px;
+    padding: 0px 30px 40px 30px;
 }
 
 .languagebox figure {
@@ -200,4 +202,76 @@ header a:hover {
 
 .languagebox figure img {
     width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #b30000;
+}
+
+footer h5 {
+    text-align: center;
+    color: #e9e9e9;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+footer a:visited {
+    color: #e9e9e9;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 630px) {
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #header .logo {
+        padding-left: 0;
+    }
+
+    #header nav {
+        padding: 10px 0 10px 0;
+        background: #d1d1d1
+    }
+
+    .showcase h1 {
+        font-size: 3em;
+    }
+
+    .showcase h2 {
+        font-size: 2.5em;
+        padding-left: 0;
+    }
+
+    .reasons #reasons h3 {
+        font-size: 1em;
+    }
+
+    .advbox h3 {
+        font-size: 1em;
+    }
+
+    .advbox p {
+        font-size: 0.9em;
+    }
+
+    .languages h3 {
+        font-size: 1.3em;
+    }
+
+    h5 {
+        font-size: 0.7em;
+    }
 }
